@@ -13,6 +13,8 @@
 		6E45FDEC29003DF7008AF765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E45FDEA29003DF7008AF765 /* Main.storyboard */; };
 		6E45FDEE29003DF9008AF765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E45FDED29003DF9008AF765 /* Assets.xcassets */; };
 		6E45FDF129003DF9008AF765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E45FDEF29003DF9008AF765 /* LaunchScreen.storyboard */; };
+		6E45FDFE290041D2008AF765 /* CameraDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E45FDFD290041D2008AF765 /* CameraDetailsViewModel.swift */; };
+		6E45FE00290042DD008AF765 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E45FDFF290042DD008AF765 /* CameraModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6E45FDED29003DF9008AF765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E45FDF029003DF9008AF765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E45FDF229003DF9008AF765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E45FDFD290041D2008AF765 /* CameraDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDetailsViewModel.swift; sourceTree = "<group>"; };
+		6E45FDFF290042DD008AF765 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		6E45FDE329003DF7008AF765 /* MVVM_camera */ = {
 			isa = PBXGroup;
 			children = (
-				6E45FDE429003DF7008AF765 /* AppDelegate.swift */,
-				6E45FDE629003DF7008AF765 /* SceneDelegate.swift */,
+				6E45FDFC29004077008AF765 /* Model */,
+				6E45FDFB29004064008AF765 /* CameraDetails */,
+				6E45FDFA29003F4E008AF765 /* Resources */,
+				6E45FDF929003F1B008AF765 /* Storyboard */,
+				6E45FDF829003EFE008AF765 /* Supporting Files */,
 				6E45FDE829003DF7008AF765 /* ViewController.swift */,
-				6E45FDEA29003DF7008AF765 /* Main.storyboard */,
-				6E45FDED29003DF9008AF765 /* Assets.xcassets */,
-				6E45FDEF29003DF9008AF765 /* LaunchScreen.storyboard */,
-				6E45FDF229003DF9008AF765 /* Info.plist */,
 			);
 			path = MVVM_camera;
+			sourceTree = "<group>";
+		};
+		6E45FDF829003EFE008AF765 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E45FDE429003DF7008AF765 /* AppDelegate.swift */,
+				6E45FDE629003DF7008AF765 /* SceneDelegate.swift */,
+				6E45FDF229003DF9008AF765 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E45FDF929003F1B008AF765 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6E45FDEA29003DF7008AF765 /* Main.storyboard */,
+				6E45FDEF29003DF9008AF765 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6E45FDFA29003F4E008AF765 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E45FDED29003DF9008AF765 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E45FDFB29004064008AF765 /* CameraDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6E45FDFD290041D2008AF765 /* CameraDetailsViewModel.swift */,
+			);
+			path = CameraDetails;
+			sourceTree = "<group>";
+		};
+		6E45FDFC29004077008AF765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E45FDFF290042DD008AF765 /* CameraModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +186,8 @@
 			files = (
 				6E45FDE929003DF7008AF765 /* ViewController.swift in Sources */,
 				6E45FDE529003DF7008AF765 /* AppDelegate.swift in Sources */,
+				6E45FE00290042DD008AF765 /* CameraModel.swift in Sources */,
+				6E45FDFE290041D2008AF765 /* CameraDetailsViewModel.swift in Sources */,
 				6E45FDE729003DF7008AF765 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38NM7VX6QJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVVM_camera/Info.plist;
+				INFOPLIST_FILE = "MVVM_camera/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38NM7VX6QJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVVM_camera/Info.plist;
+				INFOPLIST_FILE = "MVVM_camera/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
